@@ -1,3 +1,6 @@
+const { root } = require('../../data-structure/graph/test')
+const { Queue } = require('../../data-structure/queue/Queue')
+const { Stack } = require('../../data-structure/stack/Stack')
 
 function binarySearch(arr, target) {
   arr = arr.sort()
@@ -38,10 +41,62 @@ function binarySearchIterative(arr, target) {
 }
 
 
+function BFS(root) {
+  const queue = new Queue()
+  const explored = new Set()
+  const result = []
+
+  // init queue
+  queue.enqueue(root)
+  explored.add(root.value)
+
+  while (!queue.isEmpty()) {
+    const node = queue.dequeue()
+    // output 
+    result.push(node.value)
+
+    node.neighbors.forEach(neighbor => {
+      if (!explored.has(neighbor.value)) {
+        explored.add(neighbor.value)
+        queue.enqueue(neighbor)
+      }
+    })
+  }
+  return result
+}
+
+function DFS(root) {
+  const stack = new Stack()
+  const explored = new Set()
+  const result = []
+
+  // init stack
+  stack.push(root)
+  explored.add(root.value)
+
+  while(!stack.isEmpty()) {
+    const node = stack.pop()
+
+    // output
+    result.push(node.value)
+
+    node.neighbors.forEach(neighbor=>{
+      if(!explored.has(neighbor.value)){
+        explored.add(neighbor.value)
+        stack.push(neighbor)
+      }
+    })
+  }
+  return result
+}
+
+
 function main(...functions) {
   const input = [2, 1, 4, 1, 7, 5, 6, 2, 3]
   const target = 5
-  functions.forEach(func => console.log(func([...input], target)))
+  functions.forEach(func => console.log(`${func.name}: `,func([...input], target)))
+  const finding = [BFS, DFS]
+  finding.forEach(func => console.log(`${func.name}: `,func(root)))
 }
 
 main(binarySearch, binarySearchIterative)
