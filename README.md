@@ -1,7 +1,7 @@
 # common algorithm & data structures
 
 ## data structures
----
+
 list
 - linked list
 
@@ -16,7 +16,7 @@ graph
 
 
 ## algorithm
----
+
 sorting
 - bubbleSort
 - selectionSort
