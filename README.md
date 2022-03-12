@@ -105,3 +105,4 @@ Else
 |141. 环形链表|https://leetcode-cn.com/problems/linked-list-cycle/| hashTable / slow&fast pointer | track head and comparing of exsistence / slow pointer will meet fast pointer if there is a loop (fast two steps, slow one step, break loop when fast || fast.next == null)
 |203. 移除链表元素|https://leetcode-cn.com/problems/remove-linked-list-elements/| slow&fast pointer| dummy.next = head, iterate if node.next.val = val -> node.next = node.next.next
 |100. 相同的树|https://leetcode-cn.com/problems/same-tree/|DFS| two stack dfs two trees compare each node
+|53. 最大子数组和|https://leetcode-cn.com/problems/maximum-subarray/|dynamic programming| dp[i]=max{nums[i],dp[i−1]+nums[i]}|
