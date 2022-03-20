@@ -1,0 +1,10 @@
+const { Trie } = require('./Trie')
+
+const trie = new Trie()
+trie.insert('apple')
+console.log("trie.searchPrefix('appl'): ", trie.searchPrefix('appl'))
+console.log("trie.searchPrefix('appla'): ", trie.searchPrefix('appla'))
+trie.insert('apply')
+console.log("trie.searchPrefix('appl'): ", trie.searchPrefix('appl'))
+console.log("trie.searchPrefix('apple'): ", trie.searchPrefix('apple'))
+console.log("trie.searchPrefix('applyapple'): ", trie.searchPrefix('applyapple'))
