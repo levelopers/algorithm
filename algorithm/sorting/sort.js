@@ -1,6 +1,6 @@
 
 /**
- * Worst Case Time Complexity [ Big-O ]: O(n2)
+Worst Case Time Complexity [ Big-O ]: O(n2)
 Best Case Time Complexity [Big-omega]: O(n)
 Average Time Complexity [Big-theta]: O(n2)
 Space Complexity: O(1)
@@ -25,7 +25,7 @@ function bubbleSort(arr) {
 }
 
 /**
- * Worst Case Time Complexity [ Big-O ]: O(n2)
+Worst Case Time Complexity [ Big-O ]: O(n2)
 Best Case Time Complexity [Big-omega]: O(n2)
 Average Time Complexity [Big-theta]: O(n2)
 Space Complexity: O(1)
@@ -46,7 +46,7 @@ function selectionSort(arr) {
 }
 
 /**
- * Worst Case Time Complexity [ Big-O ]: O(n2)
+Worst Case Time Complexity [ Big-O ]: O(n2)
 Best Case Time Complexity [Big-omega]: O(n)
 Average Time Complexity [Big-theta]: O(n2)
 Space Complexity: O(1)
@@ -67,7 +67,7 @@ function insertionSort(arr) {
 
 
 /**
- * Worst Case Time Complexity [ Big-O ]: O(n2)
+Worst Case Time Complexity [ Big-O ]: O(n2)
 Best Case Time Complexity [Big-omega]: O(n*log n)
 Average Time Complexity [Big-theta]: O(n*log n)
 Space Complexity: O(n*log n)
@@ -140,7 +140,7 @@ function quickSort2(arr) {
 }
 
 /**
- * Worst Case Time Complexity [ Big-O ]: O(n*log n)
+Worst Case Time Complexity [ Big-O ]: O(n*log n)
 Best Case Time Complexity [Big-omega]: O(n*log n)
 Average Time Complexity [Big-theta]: O(n*log n)
 Space Complexity: O(n)

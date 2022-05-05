@@ -1,11 +1,3 @@
-
-// linkedlist
-// queue
-// stack
-// hashTable
-// tree
-// graph
-
 /**
  * good: easy to add and remove
  * bad: slow on accessing
