@@ -1,5 +1,5 @@
 const {LinkedList} = require('./LinkedList')
-
+const {DoublyLinkedList}=require('./DoublyLinkedList')
 
 const linkedList = new LinkedList()
 linkedList.addFirst(3)
@@ -15,3 +15,12 @@ console.log('pollFirst: ',linkedList.toArray().map(node=>node.value));
 linkedList.pollLast()
 console.log('pollLast: ',linkedList.toArray().map(node=>node.value));
 
+// DoublyLinkedList
+console.log('DoublyLinkedList');
+let dL = new DoublyLinkedList()
+dL.addLast(4)
+console.log(dL.toArray());
+dL.addLast(3)
+console.log(dL.toArray());
+dL.addFirst(1)
+console.log(dL.toArray());

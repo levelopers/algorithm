@@ -66,7 +66,29 @@ class BinaryTreeNode {
     }
     return traverse
   }
-
+  traversePreOrder() {
+    let traverse = []
+    traverse.push(this.value)
+    if (this.left) {
+      traverse = traverse.concat(this.left.traverseInOrder())
+    }
+    if (this.right) {
+      traverse = traverse.concat(this.right.traverseInOrder())
+    }
+    return traverse
+  }
+  traversePostOrder() {
+    let traverse = []
+    if (this.left) {
+      traverse = traverse.concat(this.left.traverseInOrder())
+    }
+    if (this.right) {
+      traverse = traverse.concat(this.right.traverseInOrder())
+    }
+    traverse.push(this.value)
+    return traverse
+  }
+  // bfs level order
   static generateTreeFromArray(arr) {
     return helper(arr, {}, 0)
     // recursive helper
