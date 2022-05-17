@@ -1,8 +1,15 @@
-const { TrieNode } = require('./TrieNode')
+
+class TrieNode {
+    constructor(val) {
+        this.val = val
+        this.children = {}
+        this.isEnd = false
+    }
+}
 
 class Trie {
     constructor() {
-        this.root = new TrieNode()
+        this.root = new TrieNode(null)
     }
 
     insert(word){
@@ -28,5 +35,6 @@ class Trie {
 }
 
 module.exports = {
-    Trie
+    Trie,
+    TrieNode
 }

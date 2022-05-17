@@ -90,16 +90,15 @@ class BinaryTreeNode {
   }
   // bfs level order
   static generateTreeFromArray(arr) {
-    return helper(arr, {}, 0)
-    // recursive helper
-    function helper(arr, node, index) {
-      if (index >= arr.length) return node
+    return helper(arr, 0)
+    function helper(arr, index) {
+      if (index >= arr.length) return
+      // remove branch if val is null
       if (!arr[index]) return null
-      let temp = new BinaryTreeNode(arr[index])
-      node = temp
-      node.left = helper(arr, node.left, 2 * index + 1)
-      node.right = helper(arr, node.right, 2 * index + 2)
-      return node
+      let cur = new Node(arr[index])
+      cur.left = helper(arr, 2 * index + 1)
+      cur.right = helper(arr, 2 * index + 2)
+      return cur
     }
   }
 }

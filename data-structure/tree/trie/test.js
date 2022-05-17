@@ -8,3 +8,8 @@ trie.insert('apply')
 console.log("trie.searchPrefix('appl'): ", trie.searchPrefix('appl'))
 console.log("trie.searchPrefix('apple'): ", trie.searchPrefix('apple'))
 console.log("trie.searchPrefix('applyapple'): ", trie.searchPrefix('applyapple'))
+trie.insert('bpply')
+console.log("trie.searchPrefix('bppl'): ", trie.searchPrefix('bppl'))
+console.log("trie.searchPrefix('bpple'): ", trie.searchPrefix('bpple'))
+console.log("trie.searchPrefix('bpplyapple'): ", trie.searchPrefix('bpplyapple'))
+console.log(trie);
