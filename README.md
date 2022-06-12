@@ -94,6 +94,7 @@
 ### tree
 - [traverse in-order, pre-order, post-order(前，中，后序遍历)](./data-structure/tree/binaryTree/BinaryTreeNode.js)
 - [BFS, DFS（广度，深度搜索）](./algorithm/searching/search.js)
+- [迷宫](#1091)
 - [invert binary tree(翻转二叉树)](#226)
 
 ## algorithm categories (types)
@@ -211,3 +212,4 @@ void backtracking(参数) {
 |<span id="239">239. 滑动窗口最大值</span>|https://leetcode-cn.com/problems/sliding-window-maximum/| queue | [mono queue](./data-structure/queue/MonoQueue.js)  |
 |<span id="347">347. 前 K 个高频元素</span>|https://leetcode-cn.com/problems/top-k-frequent-elements/| queue | [priority queue](./data-structure/queue/PriorityQueue.js)  |
 |<span id="226">226. 翻转二叉树</span>|https://leetcode-cn.com/problems/invert-binary-tree/| recursive | swap node.left, node.right |
+|<span id="1091">1091. 二进制矩阵中的最短路径</span>|https://leetcode.cn/problems/shortest-path-in-binary-matrix/| bfs | queue structured bfs, shortest path is the first reach the end in tree |
